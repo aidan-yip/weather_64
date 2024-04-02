@@ -1,12 +1,14 @@
 # Weather 64
 A clean minimal weather app.
 
+# Powered by
+
 <ul>
-  <li>Powered by the ©OpenWeather API</li>
+  <li>The ©OpenWeather API</li>
   <li>Google Maps - Map Data ©Google</li>
 </ul>
 
-# Features:
+# Features
 <ul>
   <li>City search by user text input</li>
   <li>Current location (w/search function)</li>
@@ -17,7 +19,7 @@ A clean minimal weather app.
   <li>Interactive map</li>
 </ul>
 
-# Credits:
+# Credits
 
 ## Original Idea: https://dev.to/iamcymentho/building-a-complete-weather-app-from-scratch-with-html-css-and-javascript-a-step-by-step-guide-30h4
 ## OpenWeather API: https://openweathermap.org
