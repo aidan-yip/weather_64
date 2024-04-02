@@ -35,8 +35,8 @@ const dateWithoutTime = date.toLocaleDateString();
 
 //OPEN WEATHER API
 
-// const apiKey = '2bfdac11a6fb05bc2347f9f0f01e3031';
-// const apiUrl = 'http://api.openweathermap.org/data/2.5/weather';
+const apiKey = '2bfdac11a6fb05bc2347f9f0f01e3031';
+const apiUrl = 'http://api.openweathermap.org/data/2.5/weather';
 
 const locationInput = document.getElementById('locationInput');
 const searchButton = document.getElementById('searchButton');
