@@ -52,7 +52,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  padding-bottom: 500px;
+  padding-bottom: 300px;
   padding-top: 50px;
   height: 100%;
 }
@@ -167,7 +167,8 @@ iframe {
   z-index: 0;
 }
 
-h1, #location {
+h1,
+#location {
   font-size: 80px;
   font-weight: bolder;
   text-align: left;
@@ -284,9 +285,13 @@ a:visited {
 }
 
 @media only screen and (max-width: 1000px) {
+  #background {
+    padding-bottom: 100px;
+  }
 
+  h1,
   #location {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   #icon {
