@@ -24,13 +24,13 @@
 }
 
 @supports (padding: max(0px)) {
-    body,
-    header,
-    footer {
-      padding-left: min(0vmin, env(safe-area-inset-left));
-      padding-right: min(0vmin, env(safe-area-inset-right));
-    }
+  body,
+  header,
+  footer {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
   }
+}
 
 @keyframes fadeInAnimation {
   0% {
@@ -44,6 +44,7 @@
 body {
   background-color: #0052bc;
   padding-top: 0px;
+  min-width: 375px;
 }
 
 #background {
@@ -51,7 +52,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  padding-bottom: 100px;
+  padding-bottom: 500px;
   padding-top: 50px;
   height: 100%;
 }
@@ -63,9 +64,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 80%;
-  height: 730px;
+  height: auto;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   background: linear-gradient(
     328deg,
     rgba(209, 209, 209, 0.4) 0%,
@@ -84,6 +85,7 @@ body {
 
 #side_out {
   width: 32%;
+  height: 100%;
 }
 
 .side_block {
@@ -105,29 +107,38 @@ body {
 }
 
 #block_two {
+  align-items: center;
   margin-top: 10px;
   height: 170px;
 }
 
 #block_three {
+  align-items: center;
   margin-top: 10px;
-  height: 300px;
+  height: auto;
 }
 
 iframe {
   margin: 0 auto;
   margin-top: 10px;
+  margin-bottom: 10px;
   width: 95%;
-  height: 280px;
+  height: 300px;
   border-radius: 25px;
   border: none;
+}
+
+@media only screen and (min-width: 1500px) {
+  iframe {
+    height: 400px;
+  }
 }
 
 #clock {
   font-size: 60px;
   text-align: left;
   letter-spacing: 2px;
-  padding: 10px 30px;
+  padding: 5px 30px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0px;
@@ -156,32 +167,33 @@ iframe {
   z-index: 0;
 }
 
-#icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 30px;
-    background-color: #ffffff;
-    border-radius: 25px;
-    box-shadow: 0px 0px 10px #1919193b;
-}
-
-div span.md {
-  justify-content: flex-start;
-  padding: 0px 30px;
-  font-size: 500%;
-  color: #1babff;
-}
-
-h1 {
+h1, #location {
   font-size: 80px;
+  font-weight: bolder;
   text-align: left;
   padding: 20px 30px;
   padding-bottom: 0px;
   color: #121212;
   font-family: var(--fontthird);
+}
+
+#icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  margin-left: 30px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px #1919193b;
+}
+
+div span.md {
+  justify-content: flex-start;
+  padding: 0px 30px;
+  font-size: 400%;
+  color: #1babff;
 }
 
 #date {
@@ -194,17 +206,8 @@ h1 {
   font-family: var(--fontdefault);
 }
 
-#location {
-  font-size: 60px;
-  font-weight: 300;
-  text-align: left;
-  padding: 10px 30px;
-  color: #121212;
-  font-family: var(--fontthird);
-}
-
 #temperature {
-  font-size: 100px;
+  font-size: 60px;
   text-align: left;
   padding: 10px 30px;
   color: #121212;
@@ -257,13 +260,13 @@ button {
 }
 
 svg {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
 }
 
 a {
@@ -281,16 +284,22 @@ a:visited {
 }
 
 @media only screen and (max-width: 1000px) {
-  h1 {
-    font-size: 50px;
+
+  #location {
+    font-size: 30px;
+  }
+
+  #icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  div span.md {
+    font-size: 200%;
   }
 
   #date {
-    font-size: 20px;
-  }
-
-  #location {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #temperature {
@@ -317,6 +326,7 @@ a:visited {
   #inner {
     height: auto;
     width: 100%;
+    margin-top: 20px;
   }
 
   #side_out {
@@ -328,9 +338,13 @@ a:visited {
     height: 80px;
   }
 
+  #block_tree {
+    height: 300px;
+  }
+
   div.container {
     margin-top: 20px;
-    height: 1100px;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
