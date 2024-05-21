@@ -10,6 +10,7 @@ A clean minimal weather app.
 
 # Features
 <ul>
+  <li>Can be installed as a web app</li>
   <li>City search by user text input</li>
   <li>Current location (w/search function)</li>
   <li>Current temperature</li>
