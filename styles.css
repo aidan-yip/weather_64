@@ -142,7 +142,7 @@ iframe {
   background-size: cover;
   background-repeat: no-repeat;
   width: 65%;
-  height: 690px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   border-radius: 35px;
@@ -259,6 +259,9 @@ button {
 svg {
     display: flex;
     justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
@@ -296,6 +299,7 @@ a:visited {
 
   #description {
     font-size: 12px;
+    margin-bottom: 20px;
   }
 
   input[type="text"] {
@@ -311,7 +315,7 @@ a:visited {
   }
 
   #inner {
-    height: 400px;
+    height: auto;
     width: 100%;
   }
 
