@@ -29,9 +29,9 @@ function currentTime() {
 // Date
 
 const date = new Date();
-const dateWithoutTime = date.toLocaleDateString();
+const dateWithoutTime = date.toDateString();
 
-    document.getElementById("date").innerHTML = dateWithoutTime;
+document.getElementById("date").innerHTML = dateWithoutTime;
 
 //OPEN WEATHER API
 
