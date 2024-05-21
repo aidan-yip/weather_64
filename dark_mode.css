@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
   #background {
-    background-image: url("https://raw.githubusercontent.com/aidan-yip/weather_64/main/public/moon.jpg");
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
   }
 
   .container {
