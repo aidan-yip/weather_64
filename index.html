@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Weather 64</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dark_mode.css" />
+    <!--CSS Preconnect fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
+      rel="stylesheet"
+    />
+    <!--Preconnect icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!--Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://raw.githubusercontent.com/aidan-yip/weather_64/main/public/favicon.ico"
+    />
+    <!-- Manifest JSON -->
+    <link rel="manifest" href="manifest.json" />
+    <!--Apple idevice touch icon-->
+    <link rel="apple-touch-icon" href="./public/icons/icon.png" />
+    <!--Apple idevice fullscreen-->
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!--Apple idevice splash screen-->
+    <link rel="apple-touch-icon" href="public/icons/icon.png" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2048-2732.jpg"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2732-2048.jpg"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1668-2388.jpg"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2388-1668.jpg"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1536-2048.jpg"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2048-1536.jpg"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1488-2266.jpg"
+      media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2266-1488.jpg"
+      media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1640-2360.jpg"
+      media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2360-1640.jpg"
+      media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1668-2224.jpg"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2224-1668.jpg"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1620-2160.jpg"
+      media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2160-1620.jpg"
+      media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1290-2796.jpg"
+      media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2796-1290.jpg"
+      media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1179-2556.jpg"
+      media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2556-1179.jpg"
+      media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1284-2778.jpg"
+      media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2778-1284.jpg"
+      media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1170-2532.jpg"
+      media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2532-1170.jpg"
+      media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1125-2436.jpg"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2436-1125.jpg"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1242-2688.jpg"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2688-1242.jpg"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-828-1792.jpg"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1792-828.jpg"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1242-2208.jpg"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-2208-1242.jpg"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-750-1334.jpg"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1334-750.jpg"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-640-1136.jpg"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="public/splash/apple-splash-1136-640.jpg"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+  </head>
+  <body>
+    <div id="background">
+      <div class="container">
+        <div id="inner">
+          <h1>TODAY</h1>
+          <p id="date"></p>
+          <div id="icon">
+            <span class="material-symbols-outlined md">
+              partly_cloudy_day
+            </span>
+          </div>
+          <h2 id="location"></h2>
+          <p id="temperature"></p>
+          <p id="description">Enter a city in Search</p>
+
+          <svg
+            id="wave"
+            style="transform: rotate(0deg); transition: 0.3s"
+            viewBox="0 0 1440 360"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(62, 74.39, 243, 1)" offset="0%"></stop>
+                <stop
+                  stop-color="rgba(11, 255, 250.867, 1)"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 0px); opacity: 1"
+              fill="url(#sw-gradient-0)"
+              d="M0,36L30,30C60,24,120,12,180,48C240,84,300,168,360,168C420,168,480,84,540,90C600,96,660,192,720,228C780,264,840,240,900,204C960,168,1020,120,1080,84C1140,48,1200,24,1260,54C1320,84,1380,168,1440,210C1500,252,1560,252,1620,240C1680,228,1740,204,1800,186C1860,168,1920,156,1980,126C2040,96,2100,48,2160,66C2220,84,2280,168,2340,210C2400,252,2460,252,2520,228C2580,204,2640,156,2700,138C2760,120,2820,132,2880,144C2940,156,3000,168,3060,162C3120,156,3180,132,3240,108C3300,84,3360,60,3420,42C3480,24,3540,12,3600,54C3660,96,3720,192,3780,192C3840,192,3900,96,3960,54C4020,12,4080,24,4140,48C4200,72,4260,108,4290,126L4320,144L4320,360L4290,360C4260,360,4200,360,4140,360C4080,360,4020,360,3960,360C3900,360,3840,360,3780,360C3720,360,3660,360,3600,360C3540,360,3480,360,3420,360C3360,360,3300,360,3240,360C3180,360,3120,360,3060,360C3000,360,2940,360,2880,360C2820,360,2760,360,2700,360C2640,360,2580,360,2520,360C2460,360,2400,360,2340,360C2280,360,2220,360,2160,360C2100,360,2040,360,1980,360C1920,360,1860,360,1800,360C1740,360,1680,360,1620,360C1560,360,1500,360,1440,360C1380,360,1320,360,1260,360C1200,360,1140,360,1080,360C1020,360,960,360,900,360C840,360,780,360,720,360C660,360,600,360,540,360C480,360,420,360,360,360C300,360,240,360,180,360C120,360,60,360,30,360L0,360Z"
+            ></path>
+            <defs>
+              <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(62, 117.309, 243, 1)" offset="0%"></stop>
+                <stop
+                  stop-color="rgba(11, 217.806, 255, 1)"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 50px); opacity: 0.9"
+              fill="url(#sw-gradient-1)"
+              d="M0,0L30,30C60,60,120,120,180,126C240,132,300,84,360,102C420,120,480,204,540,246C600,288,660,288,720,258C780,228,840,168,900,162C960,156,1020,204,1080,222C1140,240,1200,228,1260,192C1320,156,1380,96,1440,96C1500,96,1560,156,1620,192C1680,228,1740,240,1800,258C1860,276,1920,300,1980,300C2040,300,2100,276,2160,270C2220,264,2280,276,2340,246C2400,216,2460,144,2520,132C2580,120,2640,168,2700,180C2760,192,2820,168,2880,144C2940,120,3000,96,3060,96C3120,96,3180,120,3240,108C3300,96,3360,48,3420,78C3480,108,3540,216,3600,234C3660,252,3720,180,3780,144C3840,108,3900,108,3960,120C4020,132,4080,156,4140,144C4200,132,4260,84,4290,60L4320,36L4320,360L4290,360C4260,360,4200,360,4140,360C4080,360,4020,360,3960,360C3900,360,3840,360,3780,360C3720,360,3660,360,3600,360C3540,360,3480,360,3420,360C3360,360,3300,360,3240,360C3180,360,3120,360,3060,360C3000,360,2940,360,2880,360C2820,360,2760,360,2700,360C2640,360,2580,360,2520,360C2460,360,2400,360,2340,360C2280,360,2220,360,2160,360C2100,360,2040,360,1980,360C1920,360,1860,360,1800,360C1740,360,1680,360,1620,360C1560,360,1500,360,1440,360C1380,360,1320,360,1260,360C1200,360,1140,360,1080,360C1020,360,960,360,900,360C840,360,780,360,720,360C660,360,600,360,540,360C480,360,420,360,360,360C300,360,240,360,180,360C120,360,60,360,30,360L0,360Z"
+            ></path>
+            <defs>
+              <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(62, 197.016, 243, 1)" offset="0%"></stop>
+                <stop
+                  stop-color="rgba(11, 126.887, 255, 1)"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 100px); opacity: 0.8"
+              fill="url(#sw-gradient-2)"
+              d="M0,108L30,96C60,84,120,60,180,60C240,60,300,84,360,114C420,144,480,180,540,216C600,252,660,288,720,264C780,240,840,156,900,156C960,156,1020,240,1080,258C1140,276,1200,228,1260,186C1320,144,1380,108,1440,114C1500,120,1560,168,1620,174C1680,180,1740,144,1800,126C1860,108,1920,108,1980,132C2040,156,2100,204,2160,240C2220,276,2280,300,2340,282C2400,264,2460,204,2520,192C2580,180,2640,216,2700,198C2760,180,2820,108,2880,96C2940,84,3000,132,3060,126C3120,120,3180,60,3240,36C3300,12,3360,24,3420,30C3480,36,3540,36,3600,66C3660,96,3720,156,3780,168C3840,180,3900,144,3960,108C4020,72,4080,36,4140,66C4200,96,4260,192,4290,240L4320,288L4320,360L4290,360C4260,360,4200,360,4140,360C4080,360,4020,360,3960,360C3900,360,3840,360,3780,360C3720,360,3660,360,3600,360C3540,360,3480,360,3420,360C3360,360,3300,360,3240,360C3180,360,3120,360,3060,360C3000,360,2940,360,2880,360C2820,360,2760,360,2700,360C2640,360,2580,360,2520,360C2460,360,2400,360,2340,360C2280,360,2220,360,2160,360C2100,360,2040,360,1980,360C1920,360,1860,360,1800,360C1740,360,1680,360,1620,360C1560,360,1500,360,1440,360C1380,360,1320,360,1260,360C1200,360,1140,360,1080,360C1020,360,960,360,900,360C840,360,780,360,720,360C660,360,600,360,540,360C480,360,420,360,360,360C300,360,240,360,180,360C120,360,60,360,30,360L0,360Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div id="side_out">
+          <div class="side_block">
+            <div class="column">
+              <input
+                type="text"
+                id="locationInput"
+                placeholder="Enter a city"
+              />
+              <button id="searchButton" tabindex="0">Search</button>
+              <div class="weather-info"></div>
+            </div>
+          </div>
+
+          <div class="side_block" id="block_two">
+            <div id="clock_back">
+              <p id="clock"></p>
+            </div>
+          </div>
+
+          <div class="side_block" id="block_three">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20437352.27683096!2d-104.77902311923916!3d51.29651528940539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1712027470510!5m2!1sen!2sca"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://openweathermap.org">Weather data from OpenWeather</a>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
