@@ -100,8 +100,8 @@ body {
   box-shadow: 0px 0px 20px #5b5b5b3b;
   background: linear-gradient(
     328deg,
-    rgba(241, 241, 241, 0.6) 0%,
-    rgba(209, 209, 209, 0.6) 100%
+    rgba(241, 241, 241, 0.8) 0%,
+    rgba(209, 209, 209, 0.8) 100%
   );
   z-index: 1;
 }
@@ -161,8 +161,8 @@ iframe {
   box-shadow: 0px 0px 20px #5b5b5b3b;
   background: linear-gradient(
     328deg,
-    rgba(241, 241, 241, 0.6) 0%,
-    rgba(209, 209, 209, 0.6) 100%
+    rgba(241, 241, 241, 0.8) 0%,
+    rgba(209, 209, 209, 0.8) 100%
   );
   z-index: 0;
 }
@@ -291,7 +291,7 @@ a:visited {
 
   h1,
   #location {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   #icon {
