@@ -22,6 +22,5 @@ A clean minimal weather app.
 
 # Credits
 
-## Original Idea: https://dev.to/iamcymentho/building-a-complete-weather-app-from-scratch-with-html-css-and-javascript-a-step-by-step-guide-30h4
 ## OpenWeather API: https://openweathermap.org
 ## Google Maps: https://www.google.ca/maps
