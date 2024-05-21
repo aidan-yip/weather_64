@@ -9,25 +9,25 @@
   "description": "A clean minimal open source weather app.",
   "icons": [
     {
-      "src": "public/icons/icon.png",
+      "src": "./public/icons/icon.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "public/splash/manifest-icon-192.maskable.png",
+      "src": "./public/splash/manifest-icon-192.maskable.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "public/splash/manifest-icon-512.maskable.png",
+      "src": "./public/splash/manifest-icon-512.maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "public/splash/manifest-icon-512.maskable.png",
+      "src": "./public/splash/manifest-icon-512.maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
