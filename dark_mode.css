@@ -33,7 +33,7 @@
     box-shadow: 0px 0px 50px #eaeaea3b;
   }
 
-  h1 {
+  h1, #location {
     color: #ffffff;
   }
 
@@ -41,8 +41,8 @@
     color: #ffffff;
   }
 
-  #location {
-    color: #ffffff;
+  #icon {
+    box-shadow: 0px 0px 10px #eaeaea3b;
   }
 
   #temperature {
