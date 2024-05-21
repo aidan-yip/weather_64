@@ -48,7 +48,7 @@ body {
 }
 
 #background {
-  background-image: url("https://raw.githubusercontent.com/aidan-yip/weather_64/main/public/cloud.jpg");
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
