@@ -61,6 +61,7 @@ body {
   display: flex;
   flex-direction: row;
   max-width: 1100px;
+  max-height: 780px;
   margin-left: auto;
   margin-right: auto;
   min-width: 80%;
@@ -250,6 +251,7 @@ svg {
   justify-content: flex-end;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
   width: 100%;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
@@ -269,11 +271,7 @@ a:visited {
   color: #000000;
 }
 
-@media only screen and (min-width: 1500px) {
-  iframe {
-    height: 400px;
-  }
-}
+
 
 @media only screen and (max-width: 1000px) {
   #background {
