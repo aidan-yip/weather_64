@@ -350,6 +350,7 @@ a:visited {
   div.container {
     margin-top: 20px;
     height: auto;
+    max-height: none;
     display: flex;
     flex-direction: column;
   }
