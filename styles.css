@@ -42,13 +42,13 @@
 }
 
 body {
-  background-color: #0052bc;
+  background-color: #4183bd;
   padding-top: 0px;
   min-width: 375px;
 }
 
 #background {
-  background-image: linear-gradient(to top, #92fe9d 0%, #00c9ff 100%);
+  background-image: linear-gradient(to top, #b6fabd 0%, #a7ecff 100%);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -67,15 +67,11 @@ body {
   height: auto;
   text-align: center;
   padding: 25px;
-  background: linear-gradient(
-    328deg,
-    rgba(209, 209, 209, 0.4) 0%,
-    rgba(186, 186, 186, 0.4) 100%
-  );
-  box-shadow: 0 0 80px #0000006b;
-  border-radius: 35px;
-  border: solid 1px #f1f1f1;
   margin-bottom: 10px;
+  border-radius: 35px;
+  background: #ebebeb;
+  box-shadow: 20px 20px 60px #b6fabd, -20px -20px 60px #a7ecff;
+  z-index: 1;
   /* fade in */
   animation: fadeInAnimation ease 5s;
   animation-iteration-count: 1;
@@ -86,6 +82,7 @@ body {
 #side_out {
   width: 32%;
   height: 100%;
+  margin-left: 20px;
 }
 
 .side_block {
@@ -93,17 +90,13 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   width: 100%;
   height: 200px;
+  z-index: 2;
   border-radius: 35px;
-  border: solid 1px #ffffff;
-  box-shadow: 0px 0px 20px #5b5b5b3b;
-  background: linear-gradient(
-    328deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0.7) 100%
-  );
-  z-index: 1;
+  background: #ebebeb;
+  box-shadow: 10px 10px 20px #a5a5a5, -10px -10px 20px #ffffff;
 }
 
 #block_two {
@@ -150,15 +143,10 @@ iframe {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
   border-radius: 35px;
-  border: solid 1px #ffffff;
-  box-shadow: 0px 0px 20px #5b5b5b3b;
-  background: linear-gradient(
-    328deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0.7) 100%
-  );
-  z-index: 0;
+  background: #ebebeb;
+  box-shadow: 10px 10px 20px #a5a5a5, -10px -10px 20px #ffffff;
 }
 
 h1,
@@ -322,6 +310,7 @@ a:visited {
 
   button {
     font-size: 15px;
+    margin-bottom: 0px;
   }
 
   #clock {
@@ -332,11 +321,21 @@ a:visited {
     height: auto;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   #side_out {
     width: 100%;
     padding-top: 20px;
+    margin-left: 0px;
+  }
+
+  .side_block {
+    margin-bottom: 20px;
+  }
+
+  #block_one {
+    height: 180px;
   }
 
   #block_two {
