@@ -1,39 +1,28 @@
 @media (prefers-color-scheme: dark) {
   #background {
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: linear-gradient(to top, #1b7474 0%, #290753 100%);
   }
 
   .container {
-    background: linear-gradient(
-      137deg,
-      rgba(93, 93, 93, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    );
-    border: solid 1px #515151;
-    box-shadow: 0px 0px 80px #eaeaea3b;
+    border-radius: 35px;
+    background: linear-gradient(145deg, #282828, #212121);
+    box-shadow: 13px 13px 28px #104747, -13px -13px 28px #290753;
   }
 
   .side_block {
-    background: linear-gradient(
-      137deg,
-      rgba(93, 93, 93, 0.6) 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    );
-    border: solid 1px #6e6e6e;
-    box-shadow: 0px 0px 50px #eaeaea3b;
+    border-radius: 35px;
+    background: #252525;
+    box-shadow: 9px 9px 18px #131313, -9px -9px 18px #373737;
   }
 
   #inner {
-    background: linear-gradient(
-      137deg,
-      rgba(93, 93, 93, 0.6) 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    );
-    border: solid 1px #6e6e6e;
-    box-shadow: 0px 0px 50px #eaeaea3b;
+    border-radius: 35px;
+    background: #252525;
+    box-shadow: 9px 9px 18px #131313, -9px -9px 18px #373737;
   }
 
-  h1, #location {
+  h1,
+  #location {
     color: #ffffff;
   }
 
